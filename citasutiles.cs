@@ -9,11 +9,17 @@ namespace T3_EXAMEN
     using T3_EXAMEN;
     internal class citasutiles
     {
+<<<<<<< HEAD
         
         public static void CrearCita(List<citas> citas1)
 
         {
             List<citas> citas = new List<citas>();
+=======
+
+        public static void CrearCita(List<citas> citas1)
+        {
+>>>>>>> main
             Console.Write("Ingrese el número de la cita: ");
             int numero = int.Parse(Console.ReadLine());
 
@@ -36,12 +42,17 @@ namespace T3_EXAMEN
             citas cita = new citas {
                 numero = numero, estudiante = estudiante, enfermedad = enfermedad, precio = precio };
 
+<<<<<<< HEAD
             citas.Add(cita);
+=======
+            citas.(citas1);
+>>>>>>> main
             Console.WriteLine("Cita creada exitosamente.\n");
         }
 
         public static void ListarCitas(List<citas> citas)
         {
+<<<<<<< HEAD
             double totalPrecio = 0; 
 
             Console.WriteLine("Listado de Citas Médicas:");
@@ -57,6 +68,13 @@ namespace T3_EXAMEN
                 Console.WriteLine($"Precio: {cita.precio:C}");
                 Console.WriteLine("--------------------------");
 
+=======
+            double totalPrecio = 0;
+
+            foreach (var cita in citas)
+            {
+                Console.WriteLine(cita.ToString());
+>>>>>>> main
                 totalPrecio += cita.precio;
             }
 

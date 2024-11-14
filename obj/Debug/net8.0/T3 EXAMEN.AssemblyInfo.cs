@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("T3 EXAMEN")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46692d324a828adf39136fd30c1b24fa5649d2af")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+652c7ed43810f739e2e033bc700dccececdb2785")]
+>>>>>>> main
 [assembly: System.Reflection.AssemblyProductAttribute("T3 EXAMEN")]
 [assembly: System.Reflection.AssemblyTitleAttribute("T3 EXAMEN")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

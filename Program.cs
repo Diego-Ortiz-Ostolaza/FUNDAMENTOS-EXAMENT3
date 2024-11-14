@@ -2,7 +2,10 @@
 
 estudiante estu = new estudiante();
 citas citas = new citas();
+<<<<<<< HEAD
 List<citas> cit = new List<citas>();
+=======
+>>>>>>> main
 byte opcion;
 string regresar;
 
@@ -44,11 +47,19 @@ do
 
         case 0: Environment.Exit(0); break;
 
+<<<<<<< HEAD
         case 1: citasutiles.CrearCita(cit);   break;
 
         case 2: citasutiles.ListarCitas(cit);  break;
 
         case 3: citasutiles.ModificarUniversidades(cit); break;
+=======
+        case 1: break;
+
+        case 2: break;
+
+        case 3: break;
+>>>>>>> main
 
 
     }
@@ -57,7 +68,10 @@ do
 
     regresar = Console.ReadLine();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
     Console.Clear();
 
 } while (regresar == "si");
