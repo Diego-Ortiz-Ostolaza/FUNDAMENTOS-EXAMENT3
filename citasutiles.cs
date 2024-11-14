@@ -9,17 +9,10 @@ namespace T3_EXAMEN
     using T3_EXAMEN;
     internal class citasutiles
     {
-<<<<<<< HEAD
-        
-        public static void CrearCita(List<citas> citas1)
 
-        {
-            List<citas> citas = new List<citas>();
-=======
 
         public static void CrearCita(List<citas> citas1)
         {
->>>>>>> main
             Console.Write("Ingrese el número de la cita: ");
             int numero = int.Parse(Console.ReadLine());
 
@@ -39,73 +32,77 @@ namespace T3_EXAMEN
             double precio = double.Parse(Console.ReadLine());
 
             estudiante estudiante = new estudiante { codigo = codigo, nombre = nombre, universidad = universidad };
-            citas cita = new citas {
-                numero = numero, estudiante = estudiante, enfermedad = enfermedad, precio = precio };
+            citas cita = new citas
+            {
+                numero = numero,
+                estudiante = estudiante,
+                enfermedad = enfermedad,
+                precio = precio
+            };
 
-<<<<<<< HEAD
-            citas.Add(cita);
-=======
-            citas.(citas1);
->>>>>>> main
+            citas.Add(citas1);
             Console.WriteLine("Cita creada exitosamente.\n");
         }
 
         public static void ListarCitas(List<citas> citas)
-        {
-<<<<<<< HEAD
-            double totalPrecio = 0; 
-
-            Console.WriteLine("Listado de Citas Médicas:");
-            Console.WriteLine("--------------------------");
-
-            foreach (var cita in citas)
             {
-                
-                Console.WriteLine($"Número: {cita.numero}");
-                Console.WriteLine($"Enfermedad: {cita.enfermedad}");
-                Console.WriteLine($"Nombre del Estudiante: {cita.estudiante.nombre}");
-                Console.WriteLine($"Universidad del Estudiante: {cita.estudiante.universidad}");
-                Console.WriteLine($"Precio: {cita.precio:C}");
+
+                double totalPrecio = 0;
+
+                Console.WriteLine("Listado de Citas Médicas:");
                 Console.WriteLine("--------------------------");
 
-=======
-            double totalPrecio = 0;
-
-            foreach (var cita in citas)
-            {
-                Console.WriteLine(cita.ToString());
->>>>>>> main
-                totalPrecio += cita.precio;
-            }
-
-            Console.WriteLine($"\nTotal de precios de todas las citas: {totalPrecio:C}\n");
-        }
-
-        public static void ModificarUniversidades(List<citas> citas)
-        {
-            Console.Write("Ingrese el texto a buscar para modificar en las universidades: ");
-            string textoBuscado = Console.ReadLine();
-
-            Console.Write("Ingrese el texto para reemplazar: ");
-            string textoReemplazo = Console.ReadLine();
-
-            foreach (var cita in citas)
-            {
-                if (cita.estudiante.universidad.Contains(textoBuscado))
+                foreach (var cita1 in citas)
                 {
-                    cita.estudiante.universidad = cita.estudiante.universidad.Replace(textoBuscado, textoReemplazo);
+
+                    Console.WriteLine($"Número: {cita1.numero}");
+                    Console.WriteLine($"Enfermedad: {cita1.enfermedad}");
+                    Console.WriteLine($"Nombre del Estudiante: {cita1.estudiante.nombre}");
+                    Console.WriteLine($"Universidad del Estudiante: {cita1.estudiante.universidad}");
+                    Console.WriteLine($"Precio: {cita1.precio:C}");
+                    Console.WriteLine("--------------------------");
+
+
+                    
+
+                    foreach (var citass in citas)
+                    {
+                        Console.WriteLine(cita1.ToString());
+
+                        totalPrecio += cita1.precio;
+                    }
+
+                    Console.WriteLine($"\nTotal de precios de todas las citas: {totalPrecio:C}\n");
+                }
+
+                 public static void ModificarUniversidades(List<citas> citas)
+                {
+                    Console.Write("Ingrese el texto a buscar para modificar en las universidades: ");
+                    string textoBuscado = Console.ReadLine();
+
+                    Console.Write("Ingrese el texto para reemplazar: ");
+                    string textoReemplazo = Console.ReadLine();
+
+                    foreach (var cita in citas)
+                    {
+                        if (cita.estudiante.universidad.Contains(textoBuscado))
+                        {
+                            cita.estudiante.universidad = cita.estudiante.universidad.Replace(textoBuscado, textoReemplazo);
+                        }
+                    }
+
+                    Console.WriteLine("Modificación masiva realizada.\n");
                 }
             }
 
-            Console.WriteLine("Modificación masiva realizada.\n");
+
+
+
+
+
+
         }
     }
-
-
-
-
-
-
-
 }
+
 
