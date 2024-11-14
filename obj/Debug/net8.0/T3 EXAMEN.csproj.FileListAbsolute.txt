@@ -12,3 +12,4 @@ C:\Users\user\Desktop\EXAMENT3 FUNDAMENTOS\T3 EXAMEN\obj\Debug\net8.0\refint\T3 
 C:\Users\user\Desktop\EXAMENT3 FUNDAMENTOS\T3 EXAMEN\obj\Debug\net8.0\T3 EXAMEN.pdb
 C:\Users\user\Desktop\EXAMENT3 FUNDAMENTOS\T3 EXAMEN\obj\Debug\net8.0\T3 EXAMEN.genruntimeconfig.cache
 C:\Users\user\Desktop\EXAMENT3 FUNDAMENTOS\T3 EXAMEN\obj\Debug\net8.0\ref\T3 EXAMEN.dll
+C:\Users\user\Desktop\EXAMENT3 FUNDAMENTOS\T3 EXAMEN\obj\Debug\net8.0\T3 EXAMEN.sourcelink.json

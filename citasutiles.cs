@@ -9,9 +9,11 @@ namespace T3_EXAMEN
     using T3_EXAMEN;
     internal class citasutiles
     {
-
+        
         public static void CrearCita(List<citas> citas1)
+
         {
+            List<citas> citas = new List<citas>();
             Console.Write("Ingrese el número de la cita: ");
             int numero = int.Parse(Console.ReadLine());
 
@@ -34,17 +36,27 @@ namespace T3_EXAMEN
             citas cita = new citas {
                 numero = numero, estudiante = estudiante, enfermedad = enfermedad, precio = precio };
 
-            citas.(citas1);
+            citas.Add(cita);
             Console.WriteLine("Cita creada exitosamente.\n");
         }
 
         public static void ListarCitas(List<citas> citas)
         {
-            double totalPrecio = 0;
+            double totalPrecio = 0; 
+
+            Console.WriteLine("Listado de Citas Médicas:");
+            Console.WriteLine("--------------------------");
 
             foreach (var cita in citas)
             {
-                Console.WriteLine(cita.ToString());
+                
+                Console.WriteLine($"Número: {cita.numero}");
+                Console.WriteLine($"Enfermedad: {cita.enfermedad}");
+                Console.WriteLine($"Nombre del Estudiante: {cita.estudiante.nombre}");
+                Console.WriteLine($"Universidad del Estudiante: {cita.estudiante.universidad}");
+                Console.WriteLine($"Precio: {cita.precio:C}");
+                Console.WriteLine("--------------------------");
+
                 totalPrecio += cita.precio;
             }
 

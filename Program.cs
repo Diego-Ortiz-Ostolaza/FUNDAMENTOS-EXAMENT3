@@ -2,6 +2,7 @@
 
 estudiante estu = new estudiante();
 citas citas = new citas();
+List<citas> cit = new List<citas>();
 byte opcion;
 string regresar;
 
@@ -43,11 +44,11 @@ do
 
         case 0: Environment.Exit(0); break;
 
-        case 1: break;
+        case 1: citasutiles.CrearCita(cit);   break;
 
-        case 2: break;
+        case 2: citasutiles.ListarCitas(cit);  break;
 
-        case 3: break;
+        case 3: citasutiles.ModificarUniversidades(cit); break;
 
 
     }
@@ -55,6 +56,7 @@ do
     Console.WriteLine("Desea regresar al menú? [si]: ");
 
     regresar = Console.ReadLine();
+
 
     Console.Clear();
 
