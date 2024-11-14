@@ -8,6 +8,10 @@ namespace T3_EXAMEN
 {
     internal class citas
     {
+
+
+
+
         public int numero {  get; set; }
         public estudiante estudiante { get; set; }
         public string enfermedad {  get; set; }
