@@ -51,7 +51,7 @@ do
 
         case 2: citasutiles.ListarCitas(cit);  break;
 
-        case 3: citasutiles.modifica(cit); break;
+        case 3: citasutiles.ModificarUniversidades(cit); break;
 
       
 

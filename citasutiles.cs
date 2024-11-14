@@ -13,6 +13,7 @@ namespace T3_EXAMEN
 
         public static void CrearCita(List<citas> citas1)
         {
+            List<citas> citas = new List<citas>();
             Console.Write("Ingrese el número de la cita: ");
             int numero = int.Parse(Console.ReadLine());
 
@@ -39,42 +40,44 @@ namespace T3_EXAMEN
                 enfermedad = enfermedad,
                 precio = precio
             };
-
-            citas.Add(citas1);
+            citas.Add(cita);
+            
             Console.WriteLine("Cita creada exitosamente.\n");
         }
 
         public static void ListarCitas(List<citas> citas)
+        {
+
+            double totalPrecio = 0;
+
+            Console.WriteLine("Listado de Citas Médicas:");
+            Console.WriteLine("--------------------------");
+
+            foreach (var cita in citas)
             {
 
-                double totalPrecio = 0;
-
-                Console.WriteLine("Listado de Citas Médicas:");
+                Console.WriteLine($"Número: {cita.numero}");
+                Console.WriteLine($"Enfermedad: {cita.enfermedad}");
+                Console.WriteLine($"Nombre del Estudiante: {cita.estudiante.nombre}");
+                Console.WriteLine($"Universidad del Estudiante: {cita.estudiante.universidad}");
+                Console.WriteLine($"Precio: {cita.precio:C}");
                 Console.WriteLine("--------------------------");
 
-                foreach (var cita1 in citas)
+
+
+
+                foreach (var citass in citas)
                 {
+                    Console.WriteLine(cita.ToString());
 
-                    Console.WriteLine($"Número: {cita1.numero}");
-                    Console.WriteLine($"Enfermedad: {cita1.enfermedad}");
-                    Console.WriteLine($"Nombre del Estudiante: {cita1.estudiante.nombre}");
-                    Console.WriteLine($"Universidad del Estudiante: {cita1.estudiante.universidad}");
-                    Console.WriteLine($"Precio: {cita1.precio:C}");
-                    Console.WriteLine("--------------------------");
-
-
-                    
-
-                    foreach (var citass in citas)
-                    {
-                        Console.WriteLine(cita1.ToString());
-
-                        totalPrecio += cita1.precio;
-                    }
-
-                    Console.WriteLine($"\nTotal de precios de todas las citas: {totalPrecio:C}\n");
+                    totalPrecio += cita.precio;
                 }
+            Console.WriteLine(cita);
 
+                Console.WriteLine($"\nTotal de precios de todas las citas: {totalPrecio:C}\n");
+            }
+
+        }
                  public static void ModificarUniversidades(List<citas> citas)
                 {
                     Console.Write("Ingrese el texto a buscar para modificar en las universidades: ");
@@ -93,7 +96,7 @@ namespace T3_EXAMEN
 
                     Console.WriteLine("Modificación masiva realizada.\n");
                 }
-            }
+            
 
 
 
@@ -103,6 +106,6 @@ namespace T3_EXAMEN
 
         }
     }
-}
+
 
 
