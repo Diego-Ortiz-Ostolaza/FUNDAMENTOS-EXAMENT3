@@ -21,8 +21,6 @@ namespace T3_EXAMEN
         {
             return $"{numero}:\n{estudiante.nombre} de la universidad {estudiante.universidad} con codigo de alumno{estudiante.codigo}, tendrá una cita médica por tener {enfermedad}. \n La cita costará {precio}";
         }
-        public void agregar() { 
-
-        }
+        
     }
 }
